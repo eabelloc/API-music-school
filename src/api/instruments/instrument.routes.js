@@ -11,7 +11,7 @@ InstrumentRoutes.get('/', getAll)
 InstrumentRoutes.get('/:id', getById)
 InstrumentRoutes.get('/name/:name', getByName)
 InstrumentRoutes.post('/', create)
-InstrumentRoutes.get('/update/:id', update)
-InstrumentRoutes.get('/delete/:id', deleteElement)
+InstrumentRoutes.patch('/update/:id', update)
+InstrumentRoutes.delete('/delete/:id', deleteElement)
 
 module.exports = InstrumentRoutes

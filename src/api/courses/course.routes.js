@@ -11,7 +11,7 @@ CourseRoutes.get('/', getAll)
 CourseRoutes.get('/:id', getById)
 CourseRoutes.get('/name/:name', getByName)
 CourseRoutes.post('/', create)
-CourseRoutes.get('/update/:id', update)
-CourseRoutes.get('/delete/:id', deleteElement)
+CourseRoutes.patch('/update/:id', update)
+CourseRoutes.delete('/delete/:id', deleteElement)
 
 module.exports = CourseRoutes

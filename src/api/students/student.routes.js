@@ -11,7 +11,7 @@ StudentRoutes.get('/', getAll)
 StudentRoutes.get('/:id', getById)
 StudentRoutes.get('/name/:name', getByName)
 StudentRoutes.post('/', create)
-StudentRoutes.get('/update/:id', update)
-StudentRoutes.get('/delete/:id', deleteElement)
+StudentRoutes.patch('/update/:id', update)
+StudentRoutes.delete('/delete/:id', deleteElement)
 
 module.exports = StudentRoutes

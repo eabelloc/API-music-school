@@ -11,7 +11,7 @@ TeacherRoutes.get('/', getAll)
 TeacherRoutes.get('/:id', getById)
 TeacherRoutes.get('/name/:name', getByName)
 TeacherRoutes.post('/', create)
-TeacherRoutes.get('/update/:id', update)
-TeacherRoutes.get('/delete/:id', deleteElement)
+TeacherRoutes.patch('/update/:id', update)
+TeacherRoutes.delete('/delete/:id', deleteElement)
 
 module.exports = TeacherRoutes
